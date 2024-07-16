@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+    
+    .roboto-condensed-uniquifier {
+      font-family: "Roboto Condensed", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600px;
+      font-style: normal;
+    }
+}
+
+.header{
+    background-image: url(images/lacovia\ background.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display:flex;
+    padding: 2px 6px;
+    justify-content: space-between;
+    background:  rgb(36, 167, 255);
+}
+
+nav img{
+    width: 80px;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(247, 237, 237);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #ebebeb;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+.text-box{
+    width: 90%;
+    color:  rgb(36, 167, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text-box h1{
+    font-size: 60px;
+    margin: 30px;
+}
+.text-box p{
+    margin: 30px 0 60px;
+    font-size: 13px;
+    color: rgb(36, 167, 255);
+
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    border: 1px solid  rgb(36, 167, 255); 
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #27f8ff;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        display: all;
+    }
+
+    nav .fa{
+        display: all;
+        color: blue;
+    }
+
+    .text-box{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+
+} 
+
+.recents{
+    text-align: center;
+    border: 1px solid rgb(36, 167, 255);
+    padding: 20px;
+    background:  #27f8ff;
+    font-weight: 600px;
+   
+}
+
+.recents h1{
+    font-size: 30px;
+    margin: 30px;
+}
+
+.recents p{
+    margin: 20px;
+}
+
+.Video{
+    display: flex;
+    padding: 30px;
+    margin: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.recents-row{
+    margin: 20px;
+    
+}
+.Pictures{
+    text-align: center;
+}
+
+/*----Headlines----*/
+.course{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+
+}
+h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #0defff6e;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0,2);
+}
+
+/*----Match resuts---*/
+
+.Matches{
+    text-align: center;
+    border: 1px solid #0defff6e;
+    margin: 10px;
+}
+
+.match-results{
+    display: block;
+    margin: 30px;
+    padding: 20px; 
+    
+  
+}
+.matches-animation{
+    display: flex;
+    overflow-y: hidden;
+}
+
+
+/*---Footer---*/
+
+.footer{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 600;
+
+}
+
+
+/*----About----*/
+
+.sub-header{
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 253, 241, 0.7), rgba(29, 73, 247, 0.7)),url(images/subheaderbg.png);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+}
+
+.About-Us{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5%;
+}
+
+.sub-header h1{
+    margin-top: 70px;
+}
+.About-Us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col{
+    border: 1px solid blue;
+}
+.about-col img{
+    width: 60%;
+}
+.about-col img:hover{
+    width: 100%;
+    transition: 1s;
+}
+.about-col:hover{
+    background: blue;
+    transition: 1s;
+}
+
+/*---Player Biography----*/
+
+.Bio{
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 5%;
+    margin-top: 20px;
+}
+
+.sub-header h1{
+    margin-top: 80px;
+}
+
+.Bio-col{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.Bio-col img{
+    width: 60%;
+}
+
+.Bio-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    
+}
+
+/*----Events------*/
+.Events{
+    text-align: center;
+}
+
+.events-col{
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+   
+    
+}
+
+.Even{
+    display: flex;
+    overflow-y: hidden;
+    padding: 20px;
+    border: 1px solid blue;
+    margin: 90px;
+    
+}
+
+
+/*---Contact Us page---*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+
+}
+.contact-us{
+    width:80%;
+    margin:auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+
+.contact-col element{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+/*----Promotional-----*/
+.promotional{
+    text-align: center;
+    background: rgba(89, 0, 253, 0.7);
+}
+
+.promo{
+    text-align: right;  
+}
+
+.social{
+    font-size: 20px;
+}
